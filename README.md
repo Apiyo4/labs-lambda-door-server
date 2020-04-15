@@ -7,7 +7,7 @@
 
 The one-stop portal for Lambda graduates looking for company information in the quest for a job.
 
-### Features
+<!-- ### Features
 
 - View and post interview reviews
 - View and post salary reviews
@@ -1303,4 +1303,4 @@ These contribution guidelines have been adapted from [this good-Contributing.md-
 
 ## Frontend Documentation
 
-See [Frontend Documentation](https://github.com/Labs-EU4/lambda-door-client) for details on the frontend of our project.
+See [Frontend Documentation](https://github.com/Labs-EU4/lambda-door-client) for details on the frontend of our project. -->
