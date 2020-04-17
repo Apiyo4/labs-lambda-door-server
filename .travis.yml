@@ -1,0 +1,32 @@
+language: node_js
+node_js:
+  - "stable"
+install: npm install
+services:
+  - postgresql
+addons:
+  postgresql: "9.6"
+
+cache:
+  directories:
+    - "node_modules"
+env:
+  global:
+    - DB_ENV=ci
+    - CC_TEST_REPORTER_ID=fc618dc299761cb771bd1b585189b498ea03be13029d1442a38eb3affe95a4d7
+before_script:
+  - psql -c 'create database ldoor_test;' -U postgres
+  - psql -c "CREATE USER randomuser WITH PASSWORD null;" -U postgres
+  - npm install coveralls
+  - npm i -g knex
+  - knex migrate:latest --env=ci
+  - npm install make-coverage-badge
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+script:
+  - npm run ci:test
+after_script:
+  - jest --forceExit --coverage  --coverageReporters=text-lcov | coveralls
+notifications:
+  email: false

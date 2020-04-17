@@ -1,11 +1,11 @@
-# LambdaDoor API
+<!-- # LambdaDoor API
 
 [![Build Status](https://travis-ci.com/Labs-EU4/lambda-door-server.svg?branch=develop)](https://travis-ci.com/Labs-EU4/lambda-door-server)
 [![Coverage Status](https://coveralls.io/repos/github/Labs-EU4/lambda-door-server/badge.svg?branch=develop)](https://coveralls.io/github/Labs-EU4/lambda-door-server?branch=develop)
 
 ### About
 
-The one-stop portal for Lambda graduates looking for company information in the quest for a job.
+The one-stop portal for Lambda graduates looking for company information in the quest for a job. -->
 
 <!-- ### Features
 
