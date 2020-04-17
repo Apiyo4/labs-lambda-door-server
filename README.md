@@ -1,3 +1,6 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/82001709abec6be477b8/maintainability)](https://codeclimate.com/github/Labs-EU-Flex/lambda-door-server/maintainability)
+[![Build Status](https://travis-ci.org/Labs-EU-Flex/lambda-door-server.svg?branch=master)](https://travis-ci.org/Labs-EU-Flex/lambda-door-server)
+
 <!-- # LambdaDoor API
 
 [![Build Status](https://travis-ci.com/Labs-EU4/lambda-door-server.svg?branch=develop)](https://travis-ci.com/Labs-EU4/lambda-door-server)
