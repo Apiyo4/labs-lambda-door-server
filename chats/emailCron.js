@@ -16,7 +16,7 @@ serviceAccount.private_key = process.env.FIREBASE_PRIVATE_KEY_PRODUCTION.replace
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   // databaseURL: 'https://lambda-door.firebaseio.com',
-  databaseURL: 'https://lambda-door-production.firebaseio.com',
+  databaseURL: 'https://lambdadooreuflex-production.firebaseio.com',
 });
 
 const db = admin.firestore();
