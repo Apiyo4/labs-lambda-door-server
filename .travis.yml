@@ -19,6 +19,7 @@ before_script:
   - psql -c "CREATE USER randomuser WITH PASSWORD null;" -U postgres
   - npm install coveralls
   - npm i -g knex
+  - knex migrate:rollback --env=ci
   - knex migrate:latest --env=ci
   - npm install make-coverage-badge
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
