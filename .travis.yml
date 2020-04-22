@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-  - "stable"
+  - 'stable'
 install: npm install
 services:
   - postgresql
 addons:
-  postgresql: "9.6"
+  postgresql: '9.6'
 
 cache:
   directories:
-    - "node_modules"
+    - 'node_modules'
 env:
   global:
     - DB_ENV=ci
@@ -19,7 +19,6 @@ before_script:
   - psql -c "CREATE USER randomuser WITH PASSWORD null;" -U postgres
   - npm install coveralls
   - npm i -g knex
-  - knex migrate:rollback --env ci
   - knex migrate:latest --env ci
   - npm install make-coverage-badge
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
