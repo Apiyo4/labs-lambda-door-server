@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-  - "stable"
+  - "13.13.0"
 install: npm install
 services:
   - postgresql
 addons:
-  postgresql: "9.6"
+  postgresql: '9.6'
 
 cache:
   directories:
-    - "node_modules"
+    - 'node_modules'
 env:
   global:
     - DB_ENV=ci
