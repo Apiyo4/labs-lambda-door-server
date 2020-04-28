@@ -63,7 +63,7 @@ const updateUser = async (req, res) => {
     portfolio_link: req.body.portfolio_link || user.portfolio_link,
     github_link: req.body.github_link || user.github_link,
     age: req.body.age || user.age,
-    update_at: req.body.updated_at,
+    updated_at: req.body.updated_at,
   };
 
   try {
