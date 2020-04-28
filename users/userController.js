@@ -59,7 +59,11 @@ const updateUser = async (req, res) => {
     location: req.body.location || user.location,
     longitude: req.body.longitude || user.longitude,
     latitude: req.body.latitude || user.latitude,
-    update_at: req.body.updated_at,
+    linkedin_link: req.body.linkedin_link || user.linkedin_link,
+    portfolio_link: req.body.portfolio_link || user.portfolio_link,
+    github_link: req.body.github_link || user.github_link,
+    age: req.body.age || user.age,
+    updated_at: req.body.updated_at,
   };
 
   try {
