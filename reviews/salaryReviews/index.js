@@ -1,4 +1,4 @@
-cconst express = require('express');
+const express = require('express');
 const reviews = require('./salaryReviewsController');
 const validate = require('../../middleware/validation');
 
@@ -17,7 +17,6 @@ router.patch(
   validate.salaryReviewExists,
   reviews.updateUserSalaryReview
 );
-
 
 router.get('/user/:id', validate.userExists, reviews.getUserSalaryReviews);
 router.get(
